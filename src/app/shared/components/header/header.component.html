@@ -1,0 +1,100 @@
+<header class="header">
+  <div class="header__network network-header">
+    <ul class="network-header__list">
+      <li class="network-header__item"><a href="" class="network-header__link">Ins</a></li>
+      <li class="network-header__item"><a href="" class="network-header__link">Vk</a></li>
+      <li class="network-header__item"><a href="" class="network-header__link">Twt</a></li>
+    </ul>
+  </div>
+  <div class="header__down-line header-down">
+    <div class="header-down__copyright">
+      <p>Ⓒ Все права защищены 2023</p>
+    </div>
+    <div class="header-down__pointer">
+      <button class="header-down__pointer_button header-down_left"></button>
+      <div class="header-down__pointer_mouse">
+        <img src="../../../../assets/img/mouse.gif" alt="">
+      </div>
+      <button class="header-down__pointer_button header-down_right"></button>
+    </div>
+    <div class="header-down__video">
+      <div class="header-down__video_icon">
+        <span>Видео-Проект</span><img src="../../../../assets/img/video.gif" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="header__headline">
+    <div class="header__top-line top-line">
+      <ul class="top-line__list">
+        <li class="top-line__item"><a href="" class="top-line__link"><span>График работы:</span> <span>8:00 - 18:00</span> <span>ПН-СБ</span></a></li>
+        <li class="top-line__item"><a href="" class="top-line__link"><span>Телефон:</span> <span>+7(777)-777-77-77</span></a></li>
+        <li class="top-line__item"><a href="" class="top-line__link"><span>Почта:</span> <span>email@mail.ru</span></a></li>
+        <li class="top-line__item"><a href="" class="top-line__link"><span>Адрес: </span> <span>г.Москва, </span> <span>ул. Тимирязева, </span> <span>д.4,</span> <span>офис 666Г</span></a></li>
+      </ul>
+    </div>
+    <div class="header__menu menu">
+      <div class="menu__burger" [class._active]="isMenuOpen" (click)="isMenuOpen = !isMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu__logo">
+        <img src="../../../../assets/img/logo.png" alt="" class="menu__logo_img">
+        <p class="menu__logo_text">Renovation</p>
+      </div>
+      <nav class="menu__nav" [class._active]="isMenuOpen">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+          <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__slider header-slider">
+    <!--<ul class="header-slider__list"></ul>-->
+    <swiper class="swiper header-slider__list" [config]="config" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <li class="header-slider__item">
+          <div class="header-slider__short-info">
+            <p class="header-slider__short-info_text">Более 10 лет работы</p>
+          </div>
+          <img src="../../../../assets/img/flat1.jpg" alt="" class="header-slider__item_img">
+          <div class="header-slider__info">
+            <div class="header-slider__title">
+              <p>Качетственный ремонт квартир в вашем городе</p>
+            </div>
+            <div class="header-slider__text">
+              <p>Покажем как будет выглядеть ваша квартира через 10 дней после начала работ.</p>
+            </div>
+            <div class="header-slider__request">
+              <button class="header-slider__request_button style-btn">Наши проекты</button>
+              <button class="header-slider__request_button style-btn-m">Задать вопрос</button>
+            </div>
+          </div>
+        </li>
+      </ng-template>
+      <ng-template swiperSlide>
+        <li class="header-slider__item">
+          <div class="header-slider__short-info">
+            <p class="header-slider__short-info_text">Более 10 лет работы</p>
+          </div>
+          <img src="../../../../assets/img/flat2.jpg" alt="" class="header-slider__item_img">
+          <div class="header-slider__info">
+            <div class="header-slider__title">
+              <p>Качетственный ремонт квартир в вашем городе</p>
+            </div>
+            <div class="header-slider__text">
+              <p>Покажем как будет выглядеть ваша квартира через 10 дней после начала работ.</p>
+            </div>
+            <div class="header-slider__request">
+              <button class="header-slider__request_button style-btn">Наши проекты</button>
+              <button class="header-slider__request_button style-btn-m">Задать вопрос</button>
+            </div>
+          </div>
+        </li>
+      </ng-template>
+    </swiper>
+  </div>
+</header>

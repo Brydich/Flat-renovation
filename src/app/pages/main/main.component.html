@@ -1,0 +1,688 @@
+<div class="answers block-container">
+  <div class="answers__title block-container_title">
+    <p>Ответы на самые частые вопросы</p>
+  </div>
+  <div class="answers__container">
+    <div class="answers__img">
+      <img src="../../../assets/img/flat2.jpg" alt="">
+    </div>
+    <div class="answers__accordion">
+      <mat-accordion>
+        <mat-expansion-panel >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <p>Кто выполняет ремонт?</p>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="mat-accordion_text">Наша бригада высокоспециализированных специалистов.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <p>Какую гарантию вы даёте?</p>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="mat-accordion_text">Гарантия на миллиард лет для нескольких поколений.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <p>Какую гарантию вы даёте?</p>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="mat-accordion_text">Гарантия на миллиард лет для нескольких поколений.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
+<div class="type-of-work block-container">
+  <div class="type-of-work__container">
+    <div class="type-of-work__title block-container_title">
+      <p>Ремонт по видам комнат</p>
+    </div>
+    <ul class="type-of-work__list">
+      <li class="type-of-work__item type-of-work__card type-of-work__link">
+        <div class="type-of-work__card_title">
+          <p>Ремонты отдельных комнат в квартире</p>
+        </div>
+        <div class="type-of-work__card_text">
+          <p>Выполним ремонт кухни, ванной, спальни, гостиной, детской, санузла, лоджии</p>
+        </div>
+        <button class="type-of-work__card_button style-btn">Узнать подробнее</button>
+      </li>
+      <li class="type-of-work__item">
+        <a href="" class="type-of-work__link">
+          <div class="type-of-work__img"><img src="../../../assets/img/kitchen.jpg" alt=""></div>
+          <div class="type-of-work__name">
+            <p>Кухни</p>
+          </div>
+        </a>
+      </li>
+      <li class="type-of-work__item">
+        <a href="" class="type-of-work__link">
+          <div class="type-of-work__img"><img src="../../../assets/img/livingRoom.jpg" alt=""></div>
+          <div class="type-of-work__name">
+            <p>Кухни</p>
+          </div>
+        </a>
+      </li>
+      <li class="type-of-work__item">
+        <a href="" class="type-of-work__link">
+          <div class="type-of-work__img"><img src="../../../assets/img/flat2.jpg" alt=""></div>
+          <div class="type-of-work__name">
+            <p>Кухни</p>
+          </div>
+        </a>
+      </li>
+      <li class="type-of-work__item">
+        <a href="" class="type-of-work__link">
+          <div class="type-of-work__img"><img src="../../../assets/img/flat1.jpg" alt=""></div>
+          <div class="type-of-work__name">
+            <p>Кухни</p>
+          </div>
+        </a>
+      </li>
+      <li class="type-of-work__item">
+        <a href="" class="type-of-work__link">
+          <div class="type-of-work__img"><img src="../../../assets/img/kitchen.jpg" alt=""></div>
+          <div class="type-of-work__name">
+            <p>Кухни</p>
+          </div>
+        </a>
+      </li>
+      <li class="type-of-work__item">
+        <a href="" class="type-of-work__link">
+          <div class="type-of-work__img"><img src="../../../assets/img/kitchen.jpg" alt=""></div>
+          <div class="type-of-work__name">
+            <p>Кухни</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="example-of-work block-container">
+  <div class="example-of-work__container">
+    <div class="example-of-work__title block-container_title">
+      <p>Примеры наших работ</p>
+    </div>
+    <div class="example-of-work__slider">
+      <button class="example-of-work__slider_left example-of-work__slider_navigation"></button>
+      <button class="example-of-work__slider_right example-of-work__slider_navigation"></button>
+      <swiper class="slider-works" [config]="config" (slideChange)="onSlideChange()">
+        <ng-template swiperSlide>
+          <div class="slider-works__item_body">
+            <div class="slider-works__images">
+              <div class="slider-works__images-main"><img src="../../../assets/img/flat2.jpg" alt=""></div>
+              <ul class="slider-works__images_list">
+                <li class="images-slider__item _active" (click)="onClickSlide($event)"><img src="../../../assets/img/flat2.jpg" alt=""></li>
+                <li class="images-slider__item" (click)="onClickSlide($event)"><img src="../../../assets/img/livingRoom.jpg" alt=""></li>
+                <li class="images-slider__item" (click)="onClickSlide($event)"><img src="../../../assets/img/kitchen.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="slider-works__info work-info">
+              <div class="work-info__title">
+                <p>Современный ремонт квартиры студии 60м2</p>
+              </div>
+              <div class="work-info__text">
+                <p>Ремонт квартиры был выполнен по дизайн проекту по вариантам предложенным заказчиком. После согласования тонкостей и сроков приступили к ремонту. Каждый этап был во время сдан заказчику. После ремонта выполнен клининг и объект сдан заказчику.</p>
+              </div>
+              <ul class="work-info__list">
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Площадь</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>60 м2</p>
+                  </div>
+                </li>
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Комнаты</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>1</p>
+                  </div>
+                </li>
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Срок</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>3,5 месяца</p>
+                  </div>
+                </li>
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Стоимость</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>385 000 рублей</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="slider-works__item_body">
+            <div class="slider-works__images">
+              <div class="slider-works__images-main"><img src="../../../assets/img/flat1.jpg" alt=""></div>
+              <ul class="slider-works__images_list">
+                <li class="images-slider__item _active" (click)="onClickSlide($event)"><img src="../../../assets/img/flat1.jpg" alt=""></li>
+                <li class="images-slider__item" (click)="onClickSlide($event)"><img src="../../../assets/img/flat2.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="slider-works__info work-info">
+              <div class="work-info__title">
+                <p>Черновой ремонт от 5 900 руб./м²</p>
+              </div>
+              <div class="work-info__text">
+                <p>Самый сложный и трудоемкий этап работ, влияющий на долгосрочность ремонта в квартире – подготавливаем квартиру к чистовой отделке, прокладываем коммуникации</p>
+              </div>
+              <ul class="work-info__list">
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Площадь</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>60 м2</p>
+                  </div>
+                </li>
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Комнаты</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>1</p>
+                  </div>
+                </li>
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Срок</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>3,5 месяца</p>
+                  </div>
+                </li>
+                <li class="work-info__item">
+                  <div class="work-info__item_name">
+                    <p>Стоимость</p>
+                  </div>
+                  <div class="work-info__item_value">
+                    <p>385 000 рублей</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+
+  </div>
+</div>
+<div class="fast-cards">
+  <div class="fast-cards__container">
+    <ul class="fast-cards__list">
+      <li class="fast-cards__item">
+        <div class="fast-cards__background"><img src="../../../assets/img/flat1.jpg" alt=""></div>
+        <div class="fast-cards__icon"><p>Icon</p></div>
+        <div class="fast-cards__title">
+          <p>Фиксируем цену в договоре</p>
+        </div>
+        <div class="fast-cards__text">
+          <p>Перед началом сотрудничества прописываем в договоре, что цена сметы с момента заключения договора не меняется до конца хода работ.</p>
+        </div>
+        <button class="fast-cards__button style-btn-m">Подробнее</button>
+      </li>
+      <li class="fast-cards__item">
+        <div class="fast-cards__background"><img src="../../../assets/img/flat1.jpg" alt=""></div>
+        <div class="fast-cards__icon"><p>Icon</p></div>
+        <div class="fast-cards__title">
+          <p>Фиксируем цену в договоре</p>
+        </div>
+        <div class="fast-cards__text">
+          <p>Перед началом сотрудничества прописываем в договоре, что цена сметы с момента заключения договора не меняется до конца хода работ.</p>
+        </div>
+        <button class="fast-cards__button style-btn">Подробнее</button>
+      </li>
+      <li class="fast-cards__item">
+        <div class="fast-cards__background"><img src="../../../assets/img/livingRoom.jpg" alt=""></div>
+        <div class="fast-cards__icon"><p>Icon</p></div>
+        <div class="fast-cards__title">
+          <p>Фиксируем цену в договоре</p>
+        </div>
+        <div class="fast-cards__text">
+          <p>Перед началом сотрудничества прописываем в договоре, что цена сметы с момента заключения договора не меняется до конца хода работ.</p>
+        </div>
+        <button class="fast-cards__button style-btn">Подробнее</button>
+      </li>
+      <li class="fast-cards__item">
+        <div class="fast-cards__background"><img src="../../../assets/img/flat1.jpg" alt=""></div>
+        <div class="fast-cards__icon"><p>Icon</p></div>
+        <div class="fast-cards__title">
+          <p>Фиксируем цену в договоре</p>
+        </div>
+        <div class="fast-cards__text">
+          <p>Перед началом сотрудничества прописываем в договоре, что цена сметы с момента заключения договора не меняется до конца хода работ.</p>
+        </div>
+        <button class="fast-cards__button style-btn">Подробнее</button>
+      </li>
+      <li class="fast-cards__item">
+        <div class="fast-cards__background"><img src="../../../assets/img/livingRoom.jpg" alt=""></div>
+        <div class="fast-cards__icon"><p>Icon</p></div>
+        <div class="fast-cards__title">
+          <p>Фиксируем цену в договоре</p>
+        </div>
+        <div class="fast-cards__text">
+          <p>Перед началом сотрудничества прописываем в договоре, что цена сметы с момента заключения договора не меняется до конца хода работ.</p>
+        </div>
+        <button class="fast-cards__button style-btn">Подробнее</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="gallery">
+  <div class="gallery__container block-container">
+    <div class="gallery__title block-container_title">
+      <p>Галерея наших работ</p>
+    </div>
+    <ul class="gallery__list">
+      <li class="gallery__item">
+        <a href="" class="gallery__link">
+          <div class="gallery__item_text">
+            <p>Узнать больше</p>
+          </div>
+        </a>
+        <img src="../../../assets/img/livingRoom.jpg" alt="" class="gallery__item_img">
+      </li>
+      <li class="gallery__item">
+        <a href="" class="gallery__link">
+          <div class="gallery__item_text">
+            <p>Узнать больше</p>
+          </div>
+        </a>
+        <img src="../../../assets/img/kitchen.jpg" alt="" class="gallery__item_img">
+      </li>
+      <li class="gallery__item">
+        <a href="" class="gallery__link">
+          <div class="gallery__item_text">
+            <p>Узнать больше</p>
+          </div>
+        </a>
+        <img src="../../../assets/img/flat1.jpg" alt="" class="gallery__item_img">
+      </li>
+      <li class="gallery__item">
+        <a href="" class="gallery__link">
+          <div class="gallery__item_text">
+            <p>Узнать больше</p>
+          </div>
+        </a>
+        <img src="../../../assets/img/flat2.jpg" alt="" class="gallery__item_img">
+      </li>
+      <li class="gallery__item gallery-description-card">
+        <div class="gallery-description-card__text">
+          <p>Пример хорошей работы - отзывы наших клиентов</p>
+        </div>
+        <img src="../../../assets/img/paper.jpg" alt="" class="gallery-description-card__img">
+      </li>
+      <li class="gallery__item">
+        <a href="" class="gallery__link">
+          <div class="gallery__item_text">
+            <p>Узнать больше</p>
+          </div>
+        </a>
+        <img src="../../../assets/img/kitchen.jpg" alt="" class="gallery__item_img">
+      </li>
+      <li class="gallery__item gallery-description-card">
+        <div class="gallery-description-card__text">
+          <p>Пример хорошей работы - отзывы наших клиентов</p>
+        </div>
+        <img src="../../../assets/img/paper.jpg" alt="" class="gallery-description-card__img">
+      </li>
+      <li class="gallery__item">
+        <a href="" class="gallery__link">
+          <div class="gallery__item_text">
+            <p>Узнать больше</p>
+          </div>
+        </a>
+        <img src="../../../assets/img/flat1.jpg" alt="" class="gallery__item_img">
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="price block-container">
+  <div class="price__container">
+    <div class="price__title block-container_title">
+      <p>Наш прайс-лист</p>
+    </div>
+    <ul class="price__category">
+      <li class="price__category_item">
+        <p class="price__category_name">Отделочные работы</p>
+        <ul class="price__list price-list">
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="price__img"><img src="../../../assets/img/livingRoom.jpg" alt=""></div>
+      </li>
+      <li class="price__category_item">
+        <p class="price__category_name">Отделочные работы</p>
+        <ul class="price__list price-list">
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="price__img"><img src="../../../assets/img/kitchen.jpg" alt=""></div>
+      </li>
+      <li class="price__category_item">
+        <p class="price__category_name">Отделочные работы</p>
+        <ul class="price__list price-list">
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list_name">
+              <p>Класс А</p>
+            </div>
+            <ul class="list-sub-category">
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+              <li class="list-sub-category__item">
+                <div class="list-sub-category__title">
+                  <p>Штукатурка гипсом</p>
+                </div>
+                <div class="list-sub-category__line"></div>
+                <div class="list-sub-category__text">
+                  <p><span>70$</span></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="price__img"><img src="../../../assets/img/flat1.jpg" alt=""></div>
+      </li>
+    </ul>
+  </div>
+</div>
